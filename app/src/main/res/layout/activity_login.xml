@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/color_background"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+   <ImageView
+       android:src="@mipmap/ic_launcher"
+       android:layout_width="100dp"
+       android:layout_height="100dp"
+       android:layout_marginBottom="24px"
+       android:layout_gravity="center_horizontal"
+       />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp">
+        <EditText android:id="@+id/input_username"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:inputType="text"
+            android:textColor="#edeaea"
+            android:hint="账号"/>
+        </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp">
+        <EditText android:id="@+id/input_passwords"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:inputType="textPassword"
+            android:textColor="#edeaea"
+            android:hint="密码"/>
+    </android.support.design.widget.TextInputLayout>
+    <android.support.v7.widget.AppCompatButton
+        android:onClick="btn_login"
+        android:id="@+id/btn_login"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:padding="12dp"
+        android:background="@color/colorAccent"
+        android:textColor="#edeaea"
+        android:text="登录"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/remember_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="记住密码"/>
+    </LinearLayout>
+
+    <TextView
+        android:onClick="signup"
+        android:id="@+id/link_signup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="注册"
+        android:textColor="#edeaea"
+        android:gravity="center"
+        android:textSize="16dp"/>
+</LinearLayout>
